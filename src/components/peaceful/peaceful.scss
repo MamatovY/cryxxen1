@@ -1,0 +1,25 @@
+.peaceful {
+
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 1%;
+
+        &-ico {
+            max-width: 8%;
+        }
+    }
+
+    &__app {
+        display: block;
+        margin-top: 3%;
+        max-width: 40%;
+
+    }
+
+    &__app img:hover {
+        transform: scale(1.1);
+        transition: all 0.25s;
+    }
+}

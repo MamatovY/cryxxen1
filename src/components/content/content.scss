@@ -1,0 +1,25 @@
+.content {
+    margin-top: 12%;
+    padding: 0 1%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    justify-content: space-between;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+        margin-top: 20%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        padding: 0 5%;
+
+        &__main {
+            margin-top: 10%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.zenShop {
+    &-btn {
+        display: flex;
+        gap: 3%;
+
+        & a {
+            max-width: 25%;
+        }
+
+        & a:hover {
+            transform: scale(1.1);
+            transition: all 0.25s;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+    margin-top: 10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    padding: 5% 1%;
+
+    &__main {
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+
+        &-item div:first-child {
+            margin-bottom: 20%;
+        }
+
+        &-item div {
+            margin-bottom: 5%;
+        }
+
+        &-item {
+            &-ico {
+                max-width: 50%;
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 10%;
+        text-align: left;
+
+        &-text {
+            display: grid;
+            grid-template-columns: auto 20%;
+            gap: 10%;
+            color: #AAA;
+        }
+
+        &-logo {
+            max-width: 30%;
+        }
+    }
+}

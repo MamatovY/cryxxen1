@@ -1,0 +1,134 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 10%;
+
+
+    &__personal {
+        display: flex;
+        text-align: left;
+        gap: 3%;
+        align-items: center;
+
+
+        &-icons {
+            display: flex;
+            justify-content: space-around;
+            gap: 5%;
+            max-width: 30%;
+        }
+
+        &-text:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    &__app {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3%;
+
+        &>div:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &-btn {
+            text-decoration: none;
+            color: #000;
+            margin-left: 2%;
+            font-size: 1.2em;
+            padding: 2% 6%;
+            border: 1px solid #000;
+            border-radius: 48px;
+        }
+
+        &-btn:hover {
+            transition: all 0.5s;
+            background: #000;
+            color: #fff;
+        }
+    }
+
+    &__menu {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 425px) {
+    .header {
+        &__personal {
+            & img {
+                max-height: none;
+            }
+        }
+    }
+
+
+    .header {
+        display: none;
+        position: absolute;
+        background: rgb(203, 202, 202);
+        right: 0;
+        top: 0;
+        width: 33%;
+        height: 300px;
+        border-radius: 20px 0px 0px 20px;
+
+
+        &__personal {
+            display: grid;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 5%;
+
+            &>div {
+                margin-bottom: 10%;
+            }
+
+            &-icons {
+                max-width: 30%;
+                padding-top: 5%;
+                padding-bottom: 45%;
+                padding: 5% 0 45% 5%;
+            }
+        }
+
+
+        &__app {
+            display: block;
+
+            &>div {
+                margin-bottom: 10%;
+            }
+
+
+            &-btn {
+                margin: 0 auto;
+                max-width: 40%;
+            }
+        }
+
+        &__menu {
+            width: 20px;
+            height: 20px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .header.active {
+        display: block;
+    }
+}

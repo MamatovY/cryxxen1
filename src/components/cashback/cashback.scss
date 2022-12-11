@@ -1,0 +1,22 @@
+.cashback {
+    margin-top: 10%;
+    text-align: center;
+
+    & h2 {
+        margin: 1% 0;
+    }
+
+    &__btn {
+        margin: auto;
+        margin-top: 5%;
+        width: 20%;
+        border: 1px solid #000;
+        border-radius: 48px;
+        padding: 1% 2.5%;
+    }
+
+    &__btn:hover {
+        background: #000;
+        color: #fff;
+    }
+}
